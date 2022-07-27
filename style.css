@@ -1844,6 +1844,7 @@ svg {
 }
 
 @media (max-width: 1150px) {
+  /* nav - menu */
   .nav-menu {
     width: 25%;
   }
@@ -1865,6 +1866,7 @@ svg {
     padding-left: 8px;
     outline: none;
     border: none;
+    border-right: 1px solid #000;
   }
   .search-input-mobile button {
     width: 50px;
@@ -1881,7 +1883,7 @@ svg {
     text-align: center;
   }
   .nav-list-mobile li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .nav-list-mobile li a {
     color: gainsboro;
@@ -1890,5 +1892,25 @@ svg {
   }
   .nav-list-mobile li a:hover {
     color: white;
+  }
+
+  /* main */
+  .index-main {
+    max-width: 1100px;
+  }
+  .article-image img {
+    width: 550px;
+  }
+  .article-text p {
+    font-size: 1rem;
+  }
+  .article-text-2 p {
+    font-size: 1rem;
+  }
+  .article-text-2 h2 {
+    font-size: 2rem;
+  }
+  .article-image-2 img {
+    width: 550px;
   }
 }
