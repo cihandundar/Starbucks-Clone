@@ -540,14 +540,15 @@ section {
   height: 40px;
   width: 40px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
   color: #ffffff;
   transition: all 0.5s ease;
 }
-
+.footer-col .social-links a:not(:last-child) {
+  margin-right: 10px;
+}
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: #ffffff;
@@ -1930,6 +1931,9 @@ svg {
 }
 
 @media (max-width: 992px) {
+  .logo img {
+    height: 65px;
+  }
   .hero-container {
     background-position: 100% 0;
     display: flex;
@@ -1942,8 +1946,14 @@ svg {
       ),
       url(images/hero-background.jpeg);
   }
+  .hero-image img {
+    width: 130px;
+    border: 3px solid #01452e;
+  }
+
   .hero-title h1 {
     color: white;
+    font-size: 4.5rem;
   }
   .hero-title p {
     color: white;
@@ -1960,22 +1970,29 @@ svg {
     align-items: center;
   }
   .article-text h2 {
-    padding: 10px 0;
+    padding: 20px 20px;
     font-size: 3rem;
   }
   .article-text p {
     padding: 0 90px;
   }
+
   .article-container-2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
   .article-text-2 {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: auto;
     background: none;
+  }
+  .article-text-2 .btn-2 {
+    text-align: center;
   }
   .article-text-2 h2 {
     font-size: 3rem;
@@ -1984,10 +2001,48 @@ svg {
     text-align: center;
   }
   .article-image-2 img {
-    width: 100%;
+    width: 500px;
     height: 100%;
   }
   .footer-container {
     max-width: 800px;
+  }
+}
+
+@media (max-width: 830px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-col {
+    margin-bottom: 20px;
+  }
+  .footer-col h4::before {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 100px;
+    border: 3px solid #01452e;
+  }
+  .hero-title h1 {
+    font-size: 4rem;
+  }
+  .article-text-image img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .article-text h2 {
+    font-size: 2rem;
+    padding: 10px 10px;
+  }
+  .article-image-2 img {
+    width: 100%;
   }
 }
