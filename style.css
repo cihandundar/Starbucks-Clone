@@ -1941,7 +1941,7 @@ svg {
     text-align: center;
     background-image: linear-gradient(
         190deg,
-        rgba(29, 117, 33, 0.9) 30%,
+        rgba(0, 128, 128, 0.5) 30%,
         rgba(179, 233, 109, 0.3) 100%
       ),
       url(images/hero-background.jpeg);
