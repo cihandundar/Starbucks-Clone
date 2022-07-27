@@ -1936,6 +1936,7 @@ svg {
   }
   .hero-container {
     background-position: 100% 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -2044,5 +2045,18 @@ svg {
   }
   .article-image-2 img {
     width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav-menu {
+    width: 100%;
+    overflow-y: auto;
+  }
+  .hero-image img {
+    width: 80px;
+  }
+  .article-text-2 h2 {
+    font-size: 2rem;
   }
 }
