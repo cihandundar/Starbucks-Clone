@@ -2053,6 +2053,9 @@ svg {
     width: 100%;
     overflow-y: auto;
   }
+  .logo img {
+    height: 50px;
+  }
   .hero-image img {
     width: 70px;
   }
